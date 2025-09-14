@@ -1,5 +1,12 @@
 # Budget Buddy – Personal Finance Assistant
-Budget Buddy is a full-stack web app that helps users **track expenses, incomes, and receipts** with beautiful dashboards and reports.  
+Budget Buddy is a full-stack web app that helps users **track expenses, incomes, and receipts** with beautiful dashboards and reports. 
+## Backend code repo: <a href="">Finance-Assistant-backend</a>
+Access website here: <a href="https://budget-buddy-sruthi.netlify.app/">Live link</a>
+
+**sample credentials**:
+- mail: user@gmail.com
+- password: 123
+
 ## ✨ Features
 - 🔐 User **registration & login** with JWT authentication    
 - ➕ Add income/expense manually (type, amount, date, category, description)  
