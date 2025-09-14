@@ -49,6 +49,12 @@ Finance_Assistant/
 - DELETE /api/transactions/:id → Delete transaction
 - POST /api/transactions/upload → Upload receipt
 ## 📸 Screenshots
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/c2c93ad9-ae7a-481d-b131-b7b50758d7fa" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/da703051-41bd-4ced-955c-b81ffcec39ed" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/8a6e2e8e-9740-416f-af03-179df31bbe07" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/e271783d-0043-49ec-b3cc-b9705fadca45" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/0d119b24-b27f-49c6-b089-48a0e0cc9dd5" />
+
 ## Future Improvements
 - Real OCR for receipts
 - Export reports as CSV/PDF
