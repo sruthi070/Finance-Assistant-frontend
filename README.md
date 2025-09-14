@@ -1,70 +1,57 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Budget Buddy – Personal Finance Assistant
+Budget Buddy is a full-stack web app that helps users **track expenses, incomes, and receipts** with beautiful dashboards and reports.  
+## ✨ Features
+- 🔐 User **registration & login** with JWT authentication    
+- ➕ Add income/expense manually (type, amount, date, category, description)  
+- 📷 Extract expenses from uploaded receipts.
+- 📊 Reports with clear charts:
+  - Daily, monthly, yearly
+  - Expenses by category
+  - Income vs Expense (different colors)  
+- 👤 Profile page with user details + transaction history  
+- 🗑️ Delete transactions (updates reports in real-time)  
+## 🛠️ Tech Stack
+- **Frontend:** React,CSS  
+- **Backend:** Node.js, Express.js, JWT Auth  
+- **Database:** MongoDB Atlas   
+## 📂 Project Structure
+```text
+Finance_Assistant/
+│
+├── backend/                  # Express + MongoDB backend
+│   ├── src/
+│   │   ├── index.js          # Server entry point
+│   │   ├── models/           # Mongoose schemas
+│   │   ├── routes/           # Express routes (auth, transactions)
+│   │   ├── controllers/      # Business logic
+│   │   └── middleware/       # JWT middleware
+│   ├── package.json
+│   └── .env.example
+│
+├── frontend/                 # React app
+│   ├── src/
+│   │   ├── components/       # Login, Register, Dashboard, Reports…
+│   │   ├── services/         # Axios API service
+│   │   └── App.js
+│   ├── package.json
+│   └── .env.example
+│
+└── README.md
+```
+## API Endpoints
+### Auth
+- POST /api/auth/register → Register new user
+- POST /api/auth/login → Login user, return JWT
+- GET /api/auth/me → Get current user profile
+### Transactions
+- GET /api/transactions → List all transactions
+- POST /api/transactions → Add transaction
+- DELETE /api/transactions/:id → Delete transaction
+- POST /api/transactions/upload → Upload receipt
+## 📸 Screenshots
+## Future Improvements
+- Real OCR for receipts
+- Export reports as CSV/PDF
+- Budget goal tracking & alerts
+## 👩‍💻 Author
+Made with ❤️ by Sruthi
