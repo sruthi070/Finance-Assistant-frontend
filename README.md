@@ -3,6 +3,8 @@ Budget Buddy is a full-stack web app that helps users **track expenses, incomes,
 ## Backend code repo: <a href="https://github.com/sruthi070/Finance-Assistant-backend">Finance-Assistant-backend</a>
 Access website here: <a href="https://budget-buddy-sruthi.netlify.app/">Live link</a>
 
+Demo: <a href="https://drive.google.com/drive/folders/1VuqnYvY0ZT_ngB7JdL3BRY2wppcVAJRm?usp=drive_link">Budget-Buddy-Demo</a>
+
 **sample credentials**:
 - mail: user@gmail.com
 - password: 123
